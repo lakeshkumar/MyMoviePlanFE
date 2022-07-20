@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-movie-plan",
+            "outputPath": "dist/MyMoviePlan",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-movie-plan:build:production"
+              "browserTarget": "MyMoviePlan:build:production"
             },
             "development": {
-              "browserTarget": "my-movie-plan:build:development"
+              "browserTarget": "MyMoviePlan:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-movie-plan:build"
+            "browserTarget": "MyMoviePlan:build"
           }
         },
         "test": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "my-movie-plan"
+  "defaultProject": "MyMoviePlan"
 }
