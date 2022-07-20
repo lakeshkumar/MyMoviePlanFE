@@ -1,0 +1,19 @@
+<div class = "container-fluid">
+    <app-admin-navbar></app-admin-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>Confirm Removing The Movie Ticket</h3>
+    <form class = "remove-movie-ticket" [formGroup] = "removeMovieTicket" (ngSubmit) = "onSubmit(removeMovieTicket)">
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "movieTicketId">Movie Ticket Id</label>
+                <input type = "number" class = "form-control" name = "movieTicketId" id = "movieTicketId"
+                    formControlName = "movieTicketId">
+            </div>
+        </div>
+        <p></p>
+
+        <button type = "submit" class = "btn btn-success btn-block">Confirm Removing The Movie Ticket</button>
+    </form>
+</div>

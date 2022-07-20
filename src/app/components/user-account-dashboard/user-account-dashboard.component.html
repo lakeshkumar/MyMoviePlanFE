@@ -1,0 +1,41 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <button (click) = "goToMovieTicketSearch()" class = "btn btn-info">Go To Movie Ticket Search</button>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <button (click) = "goToListOfAllMovieTickets()" class = "btn btn-info">Go To List Of All Movie Tickets</button>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <h3>User Account Dashboard</h3>
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th>User Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let userInfo of userDetails">
+                <td>{{ userInfo.id }}</td>
+                <td>{{ userInfo.firstName }}</td>
+                <td>{{ userInfo.lastName }}</td>
+                <td>{{ userInfo.username }}</td>
+                <td>{{ userInfo.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

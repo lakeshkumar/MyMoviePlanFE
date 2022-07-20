@@ -1,0 +1,25 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>Confirm Adding The Movie Ticket To Cart</h3>
+    <form class = "add-movie-ticket-to-cart" [formGroup] = "addMovieTicketToCart" (ngSubmit) = "onSubmit(addMovieTicketToCart)">
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "movieTicketId">Movie Ticket Id</label>
+                <input type = "number" class = "form-control" name = "movieTicketId" id = "movieTicketId"
+                    formControlName = "movieTicketId">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "movieName">Name of the Movie</label>
+                <input type = "text" class = "form-control" name = "movieName" id = "movieName"
+                    formControlName = "movieName">
+            </div>
+        </div>
+        <p></p>
+        <button type = "submit" class = "btn btn-success btn-block">Add cart</button>

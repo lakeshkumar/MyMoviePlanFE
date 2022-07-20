@@ -1,0 +1,42 @@
+
+  
+<div class = "container-fluid">
+    <app-admin-navbar></app-admin-navbar>
+</div>
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwjfZSi63GYorzeBKJTZ63A_BwMjGLPvGk8koQxj1DGq8xzyvdLRzsxxhsPiP-O9HS7M&usqp=CAU" alt="Avatar" class="avatar">
+    </div>
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>Admin Account Login</h3>
+    <form class = "admin-account-login" [formGroup] = "adminAccountLogin" (ngSubmit) = "onSubmit()">
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "username">Username</label>
+                <input type = "text" class = "form-control" name = "username" id = "username"
+                    formControlName = "username">
+            </div>
+            <p></p>
+
+            <div class = "form-row">
+                <div class = "form-group">
+                    <label for = "email">Email</label>
+                    <input type = "text" class = "form-control" name = "email" id = "email"
+                        formControlName = "email">
+                </div>
+            </div>
+            <p></p>
+
+            <div class = "form-row">
+                <div class = "form-group">
+                    <label for = "password">Password</label>
+                    <input type = "password" class = "form-control" name = "password" id = "password"
+                        formControlName = "password">
+                </div>
+            </div>
+            <p></p>
+
+            <button type = "submit" class = "btn btn-success btn-block">Log In</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>Movie Ticket Search</h3>
+    <form class = "movie-ticket-search" [formGroup] = "movieTicketSearch" (ngSubmit) = "onSubmit(movieTicketSearch)">
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "movieName">Name of the Movie</label>
+                <input type = "text" class = "form-control" name = "movieName" id = "movieName"
+                    formControlName = "movieName">
+            </div>
+        </div>
+        <p></p>
+
+        <button type = "submit" class = "btn btn-success btn-block">Movie Ticket Search</button>
+        
+    </form>
+</div>

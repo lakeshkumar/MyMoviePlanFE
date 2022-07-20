@@ -1,0 +1,39 @@
+<body>
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>User Account Login</h3>
+    <form class = "user-account-login" [formGroup] = "userAccountLogin" (ngSubmit) = "onSubmit(userAccountLogin)">
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "username">Username</label>
+                <input type = "text" class = "form-control" name = "username" id = "username"
+                    formControlName = "username">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "email">Email</label>
+                <input type = "text" class = "form-control" name = "email" id = "email"
+                    formControlName = "email">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "password">Password</label>
+                <input type = "password" class = "form-control" name = "password" id = "password"
+                    formControlName = "password">
+            </div>
+        </div>
+        <p></p>
+
+        <button type = "submit" class = "btn btn-success btn-block">Log In</button>
+    </form>
+</div>
+</body>

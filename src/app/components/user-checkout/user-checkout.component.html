@@ -1,0 +1,61 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <button (click) = "goToPayment()" class = "btn btn-info">Go To Payment</button>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <h3>Checkout</h3>
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th>Movie Ticket Id</th>
+                <th>Name of the Movie</th>
+                <th>Show Date</th>
+                <th>Show Time</th>
+                <th>Showing Location</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let movieTicket of movieTickets">
+                <td>{{ movieTicket.id }}</td>
+                <td>{{ movieTicket.movieName }}</td>
+                <td>{{ movieTicket.showDate }}</td>
+                <td>{{ movieTicket.showTime }}</td>
+                <td>{{ movieTicket.showingLocation }}</td>
+                <td>{{ movieTicket.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p></p>
+&nbsp;
+&nbsp;
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th>User Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let userInfo of userDetails">
+                <td>{{ userInfo.id }}</td>
+                <td>{{ userInfo.firstName }}</td>
+                <td>{{ userInfo.lastName }}</td>
+                <td>{{ userInfo.username }}</td>
+                <td>{{ userInfo.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

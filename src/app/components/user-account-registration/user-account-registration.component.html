@@ -1,0 +1,56 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>User Account Registration</h3>
+    <form class = "user-account-registration" [formGroup] = "userAccountRegistration" (ngSubmit) = "onSubmit(userAccountRegistration)">
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "firstName">First Name</label>
+                <input type = "text" class = "form-control" name = "firstName" id = "firstName"
+                    formControlName = "firstName">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "lastName">Last Name</label>
+                <input type = "text" class = "form-control" name = "lastName" id = "lastName"
+                    formControlName = "lastName">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "username">Username</label>
+                <input type = "text" class = "form-control" name = "username" id = "username"
+                    formControlName = "username">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "email">Email</label>
+                <input type = "text" class = "form-control" name = "email" id = "email"
+                    formControlName = "email">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "password">Password</label>
+                <input type = "password" class = "form-control" name = "password" id = "password"
+                    formControlName = "password">
+            </div>
+        </div>
+        <p></p>
+
+        <button type = "submit" class = "btn btn-success btn-block">Register for an Account</button>
+    </form>
+</div>

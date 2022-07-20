@@ -1,0 +1,41 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <button (click) = goToCart() class = "btn btn-info">Go To Cart</button>
+</div>
+
+<p></p>
+
+<div class = "container-fluid">
+    <h2>List of All Movie Tickets</h2>
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th><h5>Movie Name</h5></th>
+                <th><h5>Date</h5></th>
+                <th><h5>Movie Ticket Id</h5></th>
+                <th><h5> Time</h5></th>
+                <th><h5>Action</h5></th>
+                <th><h5>Location</h5></th>
+                <th><h5>Price</h5></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let movieTicket of movieTickets">
+                <td>{{ movieTicket.id }}</td>
+                <td>{{ movieTicket.movieName }}</td>
+                <td>{{ movieTicket.showDate }}</td>
+                <td>{{ movieTicket.showTime }}</td>
+                <td>{{ movieTicket.showingLocation }}</td>
+                <td>{{ movieTicket.price }}</td>
+                <td>
+                    <button (click) = "addMovieTicketToCart()" class = "btn btn-info">Add To Cart</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

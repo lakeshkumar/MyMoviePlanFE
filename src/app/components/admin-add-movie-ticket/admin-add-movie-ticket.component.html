@@ -1,0 +1,64 @@
+<div class = "container-fluid">
+    <app-admin-navbar></app-admin-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <h3>Add Movie Ticket</h3>
+    <form class = "add-movie-ticket" [formGroup] = "addMovieTicket" (ngSubmit) = "onSubmit(addMovieTicket)">
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "movieTicketId">Movie Ticket Id</label>
+                <input type = "number" class = "form-control" name = "movieTicketId" id = "movieTicketId"
+                    formControlName = "movieTicketId">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "movieName">Name of the Movie</label>
+                <input type = "text" class = "form-control" name = "movieName" id = "movieName"
+                    formControlName = "movieName">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "showDate">Show Date</label>
+                <input type = "text" class = "form-control" name = "showDate" id = "showDate"
+                    formControlName = "showDate">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "showTime">Show Time</label>
+                <input type = "text" class = "form-control" name = "showTime" id = "showTime"
+                    formControlName = "showTime">
+            </div>
+        </div>
+        <p></p>
+
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "showingLocation">Showing Location</label>
+                <input type = "text" class = "form-control" name = "showingLocation" id = "showingLocation"
+                    formControlName = "showingLocation">
+            </div>
+        </div>
+        <p></p>
+        
+        <div class = "form-row">
+            <div class = "form-group">
+                <label for = "price">Price</label>
+                <input type = "number" class = "form-control" name = "price" id = "price"
+                    formControlName = "price">
+            </div>
+        </div>
+        <p></p>
+
+        <button type = "submit" class = "btn btn-success btn-block">Add Movie Ticket</button>
+    </form>
+</div>
