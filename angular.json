@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-movie-plan": {
+    "MyMoviePlan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
