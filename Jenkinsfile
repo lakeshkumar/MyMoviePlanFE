@@ -26,5 +26,10 @@ pipeline {
 		        }
 		    }
 		}
+    stage("Docker Deploy") {
+			steps {
+				sh "docker run -itd -p 80:80 lakeshkumar/mymovieplanfe:${BUILD_NUMBER}"
+			}
+		}
 	}
 }
