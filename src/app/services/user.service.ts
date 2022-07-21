@@ -8,7 +8,7 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private baseURL = ' http://localhost:8080/api/v1/user';
+  private baseURL = ' http://ec2-3-90-43-178.compute-1.amazonaws.com:8080/api/v1/user';
 
   addUser(user: any) {
     return this.httpClient.post(`${this.baseURL}/users/add`, user);
